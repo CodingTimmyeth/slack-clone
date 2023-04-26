@@ -1,9 +1,10 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+import Chat from "./components/Chat";
 
 
 function App() {
@@ -16,7 +17,9 @@ function App() {
             <Sidebar />
             <Routes>
               <Route path="/" element={<Home />} />
+              {/* <Route path="/" element={<Chat />} /> */}
             </Routes>
+            <Chat></Chat>
           </AppBody>
         </>
       </Router>
